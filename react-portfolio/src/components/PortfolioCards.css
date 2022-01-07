@@ -1,0 +1,27 @@
+.portfolio-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+
+.portfolio-projects .card{
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-projects .card .card-info {
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid;
+    width: 70%;
+}
+
+.portfolio-projects .card .card-info .card-title {
+    font-size: 2rem;
+    text-decoration:none;
+}
+
+.portfolio-projects .card .card-image {
+    width: 50%;
+    max-width: 960px;
+}

@@ -6,13 +6,13 @@ import {Button} from './Button';
 function HeroSection() {
     return (
         <div className='hero-container'>
-            <video src="/videos/video-2.mp4" autoPlay loop muted/>
-            <h1>Adventure Awaits</h1>
-            <p>What are you waiting for?</p>
-            <div className='hero-btns'>
-                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>GET STARTED</Button>    
-                <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>Watch Trailer <i className='far fa-play'/></Button>
-            </div>
+            <span className='greetings'>Bienvenido, soy Miguel!</span>
+            <h1 className='title'>Diseño y Desarrollo de Páginas Web</h1>
+            <p className='description'>
+                Soy un Ingeniero Informático con interés en el diseño web. 
+                Actualmente estoy haciendo mi Trabajo de Fin de Grado sobre Inteligencia Artificial y Software.
+            </p>
+            <Button buttonStyle='btn--secondary' buttonSize='btn--large' roundedStyle='btn--rounded' url='/curriculum'>Conóceme</Button>
         </div>
     );
 }
