@@ -4,6 +4,7 @@ import HeroSection from '../HeroSection'
 // import Cards from '../Cards'
 import PortfolioCards from '../PortfolioCards';
 import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 function Home() {
     return(
@@ -32,6 +33,7 @@ function Home() {
             {/* <section className='contact-section'>
                 <h2>Contacta conmigo!</h2>
             </section> */}
+            <Footer />
         </>
     );
 }

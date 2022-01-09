@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
 import Curriculum from './components/pages/Curriculum';
-import Projects from './components/pages/Projects';
+import Portfolio from './components/pages/Portfolio';
+import Contacto from './components/pages/Contacto';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Home/>} />
           <Route path='/curriculum' element={<Curriculum/>} />
-          <Route path='/projects' element={<Projects/>} />
+          <Route path='/portfolio' element={<Portfolio/>} />
+          <Route path='/contacto' element={<Contacto/>} />
         </Routes>
       </Router>
     </>

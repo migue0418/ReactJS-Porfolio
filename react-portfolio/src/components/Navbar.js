@@ -30,14 +30,22 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                Projectos
+                            <Link to='/portfolio' className='nav-links' onClick={closeMobileMenu}>
+                                Portfolio
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/contacto' className='nav-links' onClick={closeMobileMenu}>
                                 Contacto
                             </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <a href='https://github.com/migue0418' className={click ? 'nav-links' : 'nav-links hidden'} onClick={closeMobileMenu}>Github</a>
+                            <a href='https://github.com/migue0418' className={click ? 'nav-links hidden' : 'nav-links'} onClick={closeMobileMenu}><i className='fab fa-github'/></a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href='https://www.linkedin.com/in/miguealguacil/' className={click ? 'nav-links' : 'nav-links hidden'} onClick={closeMobileMenu}>LinkedIn</a>
+                            <a href='https://www.linkedin.com/in/miguealguacil/' className={click ? 'nav-links hidden' : 'nav-links'} onClick={closeMobileMenu}><i className='fab fa-linkedin'/></a>
                         </li>
                     </ul>
                 </div>

@@ -1,0 +1,35 @@
+.footer {
+    background-color: #242424;
+    color: white;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu-item {
+    list-style: none;
+    margin: 1rem 0.5rem;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.footer-links:hover {
+    color: #fff
+}
+
+.footer-copyright{
+    padding: 1.5rem 0;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+}

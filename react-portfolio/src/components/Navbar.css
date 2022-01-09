@@ -5,53 +5,40 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    top: 0;
     z-index: 999;
 }
 
 .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 80px;
     max-width: 1500px;
+    width: 100%;
 }
 
 .navbar-logo {
     color: var(--secondary-color);
-    justify-self: start;
     margin-left: 1.25rem;
     cursor: pointer;
     text-decoration: none;
     font-family: 'Mr De Haviland';
     font-size: 2.75rem;
-    display: flex;
-    align-items: center;
 }
 
 .navbar-logo:hover {
     color: #fff;
 }
 
-.fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-}
-
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 0.8rem;
     list-style: none;
     text-align: center;
     width: 60vw;
     justify-content: end;
-    margin-right: 2rem;
 }
-/* 
-.nav-item {
-    height: 80px;
-} */
 
 .nav-links {
     color: #12D4A5;
@@ -81,16 +68,24 @@
     display: none;
 }
 
-@media screen and (max-width: 875px) {
-    .NavbarItems {
-        position: relative;
-    }
-    
+.hidden {
+    display: none !important;
+}
+
+@media screen and (max-width: 950px) {  
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 2rem;
+    }  
+
     .navbar.active {
         background: #242222;
         left: 0;
         opacity: 1;
-        transition: all 1.5s ease;
+        transition: all 0.75s ease;
     }
 
     .nav-menu {
@@ -128,19 +123,11 @@
     }
 
     .navbar-logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(10%, 30%);
         font-size: 2.5rem;
     }
 
     .menu-icon {
         display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
     }
@@ -160,7 +147,7 @@
         font-size: 1.5rem;
         background-color: transparent;
         color: #fff;
-        padding: 14px 20px;
+        padding: 0.8rem 1.5rem;
         border: 1px solid #fff;
         transition: all 0.3s ease-out;
     }
