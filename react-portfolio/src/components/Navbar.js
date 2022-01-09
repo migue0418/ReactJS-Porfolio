@@ -10,7 +10,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="navbar">
+            <nav className={click ? 'navbar active' : 'navbar'}>
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         Migue Alguacil

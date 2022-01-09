@@ -1,5 +1,6 @@
 .header {
-  background-color: var(--primary-color);;
+  background-color: var(--primary-color);
+  /* background-image: url('/images/img-2.jpg'); */
 }
 
 .hero-section {
@@ -16,18 +17,50 @@
 
 .hero-container .title {
   color: #fff;
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-container .greetings {
   color: var(--secondary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
 
 .hero-container .description {
   color: #F2F5F6;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1600px) {
+  .hero-section {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-section {
+    padding: 0 2rem;
+  }
+
+  .hero-container {
+    text-align: center;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-section {
+    height: max-content;
+    min-height: 500px;
+  }
+  .hero-container {
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-container .description {
+    font-size: 1.15rem;
+  }
 }

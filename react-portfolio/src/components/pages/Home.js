@@ -1,7 +1,8 @@
 import React from 'react';
 import '../../App.css'
 import HeroSection from '../HeroSection'
-import { PortfolioCards } from '../PortfolioCards';
+// import Cards from '../Cards'
+import PortfolioCards from '../PortfolioCards';
 import Navbar from '../Navbar';
 
 function Home() {
@@ -14,9 +15,9 @@ function Home() {
                 </section>
             </header>
             <section className='portfolio-section'>
-                <h2>Portfolio</h2>
-                <p>¿Quieres conocer un poco más mi trabajo? Estos son algunos de los últimos proyectos que he reaizado.</p>
-                <div className='portfolio-projects'>
+                <PortfolioCards />
+                {/* <Cards /> */}
+                {/* <div className='portfolio-projects'>
                     <PortfolioCards urlLink={'miguealguacil'} title={'Migue Alguacil'}>
                         Diseño y desarrollo de mi página web personal usando ReactJS para exponer tanto mi 
                         portfolio con todos los trabajos realizados hasta el momento así como los próximos, 
@@ -26,12 +27,11 @@ function Home() {
                     Diseño y desarrollo de página web en WordPress para una pequeña empresa de Granada. 
                     Ramón quería crear desde cero una página web para su negocio de autorecambios.
                     </PortfolioCards>
-                </div>
+                </div> */}
             </section>
-            <section className='contact-section'>
+            {/* <section className='contact-section'>
                 <h2>Contacta conmigo!</h2>
-                {/* Formulario de contacto */}
-            </section>
+            </section> */}
         </>
     );
 }

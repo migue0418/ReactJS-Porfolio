@@ -1,10 +1,5 @@
-:root {
-    --primary-color: #384862;
-    --secondary-color: #12D4A5;
-}
-
 .btn {
-    padding: 8px 20px;
+    padding: 0.5rem 1.25rem;
     border-radius: 2px;
     outline: none;
     cursor: pointer;
@@ -19,6 +14,7 @@
 .btn--secondary {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    font-size: 1.25rem;
     border: 1px solid var(--secondary-color);
 }
 
@@ -31,13 +27,13 @@
 }
 
 .btn--medium {
-    padding: 8px 20px;
-    font-size: 20px;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.25rem;
 }
 
 .btn--large {
-    padding: 12px 26px;
-    font-size: 20px;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.25rem;
 }
 
 .btn--medium:hover, .btn--large:hover {
@@ -48,4 +44,17 @@
 
 .btn--rounded {
     border-radius: 1.5rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .btn--medium, .btn--large {
+        font-size: 1.15rem;
+    }
+    .btn--medium {
+        padding: 0.3rem 1rem;
+    }
+    .btn--large {
+        padding: 0.5rem 1.25rem;
+    }
 }

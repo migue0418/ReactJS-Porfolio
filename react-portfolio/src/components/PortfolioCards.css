@@ -1,27 +1,65 @@
 .portfolio-section {
     max-width: 1500px;
     margin: 0 auto;
-    background-color: blueviolet;
+    padding: 4rem 0;
 }
 
-.portfolio-projects .card{
+.portfolio-projects h2 {
+    margin: 1rem 0 1.5rem;
+}
+
+.portfolio-projects p {
+    font-size: 1.25rem;
+}
+
+.cards--container {
     display: flex;
     align-items: center;
+    max-width: 1500px;
+    margin-top: 2rem;
 }
 
-.portfolio-projects .card .card-info {
-    align-items: center;
-    padding: 1rem;
-    border: 1px solid;
-    width: 70%;
+.cards--wrapper {
+    width: 100%;
 }
 
-.portfolio-projects .card .card-info .card-title {
-    font-size: 2rem;
-    text-decoration:none;
+.cards--items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.portfolio-projects .card .card-image {
-    width: 50%;
-    max-width: 960px;
+@media only screen and (max-width: 1200px) {
+    .cards--container {
+        justify-content: center;
+    }
+
+    .portfolio-section {
+        padding: 2.5rem 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cards--items {
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .portfolio-section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .portfolio-section {
+        padding: 2rem 1rem;
+    }
+
+    .portfolio-projects p {
+        font-size: 1.15rem;
+    }
+
+
 }

@@ -1,34 +1,41 @@
 import React from 'react';
 import './PortfolioCards.css';
-import {Link} from 'react-router-dom';
+import CardItem from './CardItem';
 
-const STYLES = ['card--primary', 'card--outline'];
-
-const SIZES = ['card--medium', 'card--large'];
-
-export const PortfolioCards = ({
-    children, 
-    title,
-    img,
-    type, 
-    onClick, 
-    cardStyle, 
-    cardSize,
-    urlLink
-}) => {
-    const checkCardStyle = STYLES.includes(cardStyle) ? cardStyle : STYLES[0];
-    const checkCardSize = SIZES.includes(cardSize) ? cardSize : SIZES[0];
-
-    return(
-        <div className={`card ${checkCardStyle} ${checkCardSize}`}>
-            <div className='card-info'>
-                <Link to={`/portfolio/${urlLink}`} className='card-title'>
-                    {title}
-                </Link>
-                <p className='card-description'>{children}</p>
+function PortfolioCards() {
+    return (
+        <div className='portfolio-projects'>
+            <h2>Portfolio</h2>
+            <p>¿Quieres conocer un poco más mi trabajo? Estos son los últimos proyectos que he realizado.</p>
+            <div className='cards--container'>
+                <div className='cards--wrapper'>
+                    <ul className='cards--items'>
+                        <CardItem
+                            src='images/autorecambiosramon-hero.png'
+                            alt='Portada de la web de Autorecambios Ramón'
+                            text='Web de Autorecambios Ramón'
+                            label='WordPress'
+                            path='/portfolio/autorecambios-ramon'
+                        />
+                        <CardItem
+                            src='images/img-2.jpg'
+                            alt='Portada de la web de Migue Alguacil'
+                            text='Diseño de Migue Alguacil'
+                            label='Adobe XD'
+                            path='/portfolio/miguealguacil'
+                        />
+                        <CardItem
+                            src='images/img-8.jpg'
+                            alt='Portada del videojuego Subject 14'
+                            text='Subject 14'
+                            label='Videojuego'
+                            path='/portfolio/subject-14'
+                        />
+                    </ul>
+                </div>
             </div>
-            <img className='card-image' src={`/images/${img}`} alt={title}/>
-            {/* <img src="/images/autorecambiosramon-hero.png" alt={title}/> */}
         </div>
-    )
-};
+    );
+}
+
+export default PortfolioCards;

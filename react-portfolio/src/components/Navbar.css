@@ -18,7 +18,7 @@
 }
 
 .navbar-logo {
-    color: #fff;
+    color: var(--secondary-color);
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -27,6 +27,10 @@
     font-size: 2.5rem;
     display: flex;
     align-items: center;
+}
+
+.navbar-logo:hover {
+    color: #fff;
 }
 
 .fa-typo3 {
@@ -75,9 +79,16 @@
     display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
     .NavbarItems {
         position: relative;
+    }
+    
+    .navbar.active {
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 1.5s ease;
     }
 
     .nav-menu {

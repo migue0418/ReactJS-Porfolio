@@ -1,9 +1,30 @@
+:root {
+    --primary-color: #384862;
+    --secondary-color: #12D4A5;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'PT Sans', sans-serif;
+    font-size: 16px;
 }
+
+h1, h2, h3, h4, h5 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+h1 { font-size: 3.5rem; }
+
+h2 { font-size: 2.75rem; }
+
+h3 { font-size: 2.25rem; }
+
+h4 { font-size: 1.75rem; }
+
+h5 { font-size: 1.5rem; }
 
 .home, .curriculum, .projects {
     display: flex;
@@ -29,4 +50,43 @@
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
+}
+
+/* Fonts 90% */
+@media only screen and (max-width: 1500px) {
+    h1 { font-size: 3.15rem; }
+
+    h2 { font-size: 2.5rem; }
+
+    h3 { font-size: 2rem; }
+
+    h4 { font-size: 1.6rem; }
+
+    h5 { font-size: 1.35rem; }
+}
+
+/* Fonts 85% */
+@media only screen and (max-width: 800px) {
+    h1 { font-size: 3rem; }
+
+    h2 { font-size: 2.35rem; }
+
+    h3 { font-size: 1.9rem; }
+
+    h4 { font-size: 1.5rem; }
+
+    h5 { font-size: 1.25rem; }
+}
+
+/* Fonts 75% */
+@media only screen and (max-width: 600px) {
+    h1 { font-size: 2.65rem; }
+
+    h2 { font-size: 2rem; }
+
+    h3 { font-size: 1.7rem; }
+
+    h4 { font-size: 1.3rem; }
+
+    h5 { font-size: 1.15rem; }
 }
