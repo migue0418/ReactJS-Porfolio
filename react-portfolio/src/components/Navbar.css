@@ -20,11 +20,11 @@
 .navbar-logo {
     color: var(--secondary-color);
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     cursor: pointer;
     text-decoration: none;
     font-family: 'Mr De Haviland';
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     display: flex;
     align-items: center;
 }
@@ -55,6 +55,7 @@
 
 .nav-links {
     color: #12D4A5;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -68,7 +69,8 @@
 }
 
 .fa-bars {
-    color: #fff;
+    color: var(--secondary-color);
+    font-size: 1.35rem;
 }
 
 .nav-links-mobile {
@@ -79,7 +81,7 @@
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 875px) {
     .NavbarItems {
         position: relative;
     }
@@ -144,8 +146,8 @@
     }
 
     .fa-times {
-        color: #fff;
-        font-size: 2rem;
+        color: var(--secondary-color);
+        font-size: 1.35rem;
     }
 
     .nav-links-mobile {
