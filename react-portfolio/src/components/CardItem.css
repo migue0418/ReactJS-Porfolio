@@ -3,8 +3,8 @@
   flex: 1;
   margin: 0 0 1.5rem 1.5rem;
   border-radius: 0.8rem;
-  min-width: 415px;
-  max-width: 600px;
+  min-width: 360px;
+  max-width: 525px;
 }
 
 .cards--item:last-child{
@@ -83,17 +83,33 @@
   line-height: 1.4rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .cards--item {
+    max-width: 450px;
+    min-width: 360px;
+    margin: 1rem;
+  }
+
+  .cards--item:last-child{
+    max-width: 600px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .cards--item, .cards--item:last-child, .cards--item:first-child {
-    max-width: 600px;
+    max-width: 450px;
     min-width: 400px;
     margin: 1rem;
+  }
+
+  .cards--item-info {
+    padding: 1.5rem 1.25rem 1.5rem 1rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .cards--item, .cards--item:last-child, .cards--item:first-child {
     min-width: 300px;
-    margin: 0.5rem 1rem;
+    margin: 1rem auto;
   }
 }

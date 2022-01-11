@@ -40,12 +40,17 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <a href='https://github.com/migue0418' className={click ? 'nav-links' : 'nav-links hidden'} onClick={closeMobileMenu}>Github</a>
-                            <a href='https://github.com/migue0418' className={click ? 'nav-links hidden' : 'nav-links'} onClick={closeMobileMenu}><i className='fab fa-github'/></a>
+                            {/* <a href='https://github.com/migue0418' className={click ? 'nav-links' : 'nav-links hidden'} onClick={closeMobileMenu}>Github</a> */}
+                            <a href='https://github.com/migue0418' className='nav-links' onClick={closeMobileMenu}>
+                                <p className={click ? 'nav-links-text' : 'nav-links-text hidden'}>Github</p>
+                                <i className={click ? 'nav-links-text hidden' : 'nav-links-text fab fa-github'}/>
+                            </a>
                         </li>
                         <li className='nav-item'>
-                            <a href='https://www.linkedin.com/in/miguealguacil/' className={click ? 'nav-links' : 'nav-links hidden'} onClick={closeMobileMenu}>LinkedIn</a>
-                            <a href='https://www.linkedin.com/in/miguealguacil/' className={click ? 'nav-links hidden' : 'nav-links'} onClick={closeMobileMenu}><i className='fab fa-linkedin'/></a>
+                            <a href='https://www.linkedin.com/in/miguealguacil/' className='nav-links' onClick={closeMobileMenu}>
+                                <p className={click ? 'nav-links-text' : 'nav-links-text hidden'}>LinkedIn</p>
+                                <i className={click ? 'nav-links-text hidden' : 'nav-links-text fab fa-linkedin'}/>
+                            </a>
                         </li>
                     </ul>
                 </div>

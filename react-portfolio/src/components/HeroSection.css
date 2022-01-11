@@ -4,14 +4,19 @@
 }
 
 .hero-section {
-  height: 850px;
-  max-width: 1500px;
+  background-color: var(--primary-color);
+  height: 900px;
   display: flex;
   align-items: center;
-  margin: auto;
 }
 
 .hero-container {
+  margin: auto;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.hero-container-info {
   max-width: 650px;
 }
 

@@ -4,15 +4,15 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 
 export default function Contacto() {
-  return(
+  return (
     <>
-        <header className='header'>
-            <Navbar />
-        </header>
-        <section className='contacto'>
-            <h1>CONTACTO</h1>
-        </section>
-        <Footer />
+      <header className='header'>
+        <Navbar />
+      </header>
+      <main role='main'>
+        <h1>Contacto</h1>
+      </main>
+      <Footer />
     </>
-);
+  );
 }

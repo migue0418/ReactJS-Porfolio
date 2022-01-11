@@ -1,6 +1,17 @@
 import React from 'react';
 import '../../App.css';
+import Navbar from '../Navbar';
+import CurriculumSection from '../CurriculumSection';
 
 export default function Curriculum() {
-  return <h1 className='curriculum'>CURRICULUM</h1>;
+  return (
+    <>
+      <header className='header'>
+        <Navbar />
+      </header>
+      <main role='main' className='curriculum-page'>
+        <CurriculumSection />
+      </main>
+    </>
+  );
 }
