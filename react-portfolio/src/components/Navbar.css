@@ -42,7 +42,7 @@
 
 .nav-links {
     color: var(--secondary-color);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -51,7 +51,7 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     transition: all 0.2s ease-out;
 }
 

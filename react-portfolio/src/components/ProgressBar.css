@@ -1,0 +1,38 @@
+.skills-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 4rem;
+    justify-content: start;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+.skill-item {
+    margin: 0.5rem 1rem;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.progress-bar-name {
+    margin-right: 0.875rem;
+    text-align: end;
+    width: 5.5rem;
+}
+
+.progress-bar-background {
+    background-color: #f1f1f1;
+    height: 0.875rem;
+    width: 180px;
+    border-radius: 16px;
+}
+
+.progress-bar-fill {
+    background-color: var(--secondary-color);
+    width: var(--bar-size);
+    height: inherit;
+    border-radius: 16px;
+}

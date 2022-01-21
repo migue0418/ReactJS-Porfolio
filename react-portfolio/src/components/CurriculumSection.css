@@ -4,7 +4,7 @@
 
 .curriculum-page {
     background-color: var(--primary-color);
-    padding-top: 3.125rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
 }
 
@@ -94,6 +94,17 @@
     color: var(--cv-gray-text);
 }
 
+.cv-item .uni-link {
+    text-decoration: none;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--cv-gray-text);
+    display: flex;
+    align-items: center;
+}
+
 .languages-item {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -138,7 +149,7 @@
 .cv-info .cv-section-heading {
     display: flex;
     width: 100%;
-    justify-content: start;
+    justify-content: flex-start;
     position: relative;
     margin-bottom: 1.25rem;
     margin-top: 3.125rem;
@@ -195,6 +206,12 @@
     margin-left: 2.1rem;
 }
 
+.uni-link {
+    color: var(--cv-gray-text);
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
 li.cv-item:not(:last-child) {
     margin-bottom: 1rem;
 }
@@ -210,4 +227,8 @@ li.cv-item:not(:last-child) {
 
 .aptitudes-section .cv-item::before {
     margin-left: -2.1rem;
+}
+
+.uni-link:hover, .contact-link:hover, .download-cv:hover {
+    color: white;
 }

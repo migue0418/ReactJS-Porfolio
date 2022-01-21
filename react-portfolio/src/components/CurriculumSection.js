@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import './CurriculumSection.css';
+import ProgressBar from './ProgressBar';
 
 function CurriculumSection() {
     // Hay que hacer display:none en el logo del navbar cuando el ancho de la página sea más de 1500px
@@ -36,12 +37,16 @@ function CurriculumSection() {
                                 <p className='contact-item-text'>La Zubia, Granada (18140)</p>
                             </li>
                             <li className='contact-item'>
-                                <i className='fab fa-github'/>
-                                <p className='contact-item-text'>Github</p>
+                                <a href="https://github.com/migue0418" className='contact-link'>
+                                    <i className='fab fa-github'/>
+                                    Github
+                                </a>
                             </li>
                             <li className='contact-item'>
-                                <i className='fab fa-linkedin'/>
-                                <p className='contact-item-text'>LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/miguealguacil/" className='contact-link'>
+                                    <i className='fab fa-linkedin'/>
+                                    LinkedIn
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -85,11 +90,11 @@ function CurriculumSection() {
                         <div className='cv-section-content'>
                             <ul className='cv-list'>
                                 <li className='cv-item'>
-                                    <strong>Universidad de Granada</strong>
+                                    <a href='https://www.ugr.es/' className='uni-link'>Universidad de Granada</a>
                                     <p>2017 - 2022. Grado en Ingeniería Informática.</p>
                                 </li>
                                 <li className='cv-item'>
-                                    <strong>Åbo Akademi University</strong>
+                                    <a href='https://www.abo.fi/en/' className='uni-link'>Åbo Akademi University</a>
                                     <p>2019 - 2020. Programa Erasmus+ en la ciudad de Turku (Finlandia).</p>
                                 </li>
                             </ul>
@@ -122,12 +127,72 @@ function CurriculumSection() {
                             <ul className='cv-list'>
                                 <li className='cv-item'>
                                     <strong>Programación y Desarrollo Web:</strong>
+                                    <ul className='skills-list'>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="HTML" content="80%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="CSS" content="70%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="JavaScript" content="70%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="PHP" content="60%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="WordPress" content="50%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Drupal" content="60%"/>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className='cv-item'>
                                     <strong>Lenguajes de Programación:</strong>
+                                    <ul className='skills-list'>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="C++" content="80%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Java" content="70%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Python" content="70%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="C#" content="60%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="SQL" content="40%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="NoSQL" content="40%"/>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className='cv-item'>
                                     <strong>Software y Frameworks:</strong>
+                                    <ul className='skills-list'>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Photoshop" content="80%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Adobe Xd" content="70%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Git" content="75%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Django" content="60%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="Flask" content="50%"/>
+                                        </li>
+                                        <li className='skill-item'>
+                                            <ProgressBar name="ReactJS" content="60%"/>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
