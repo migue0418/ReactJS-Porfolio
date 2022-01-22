@@ -238,8 +238,24 @@ li.cv-item:not(:last-child) {
     color: white;
 }
 
-
 @media only screen and (max-width: 1500px) {
+    .cv-left-bar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: var(--dark-blue);
+        width: 320px;
+        height: 100vh;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+    }
+
+    .cv-info {
+        margin-right: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     .cv-nav > .navbar-container {
         justify-content: space-between;
         margin-right: 0;
@@ -249,6 +265,7 @@ li.cv-item:not(:last-child) {
     .cv-nav .navbar-logo {
         display: block;
     }
+
     .cv-info {
         margin-left: 0;
     }
@@ -361,6 +378,7 @@ li.cv-item:not(:last-child) {
     .cv-info {
         margin-left: 0;
         padding: 0 3rem;
+        margin-right: 0;
     }
 
     .cv-title-icon {

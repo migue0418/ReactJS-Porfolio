@@ -31,7 +31,7 @@
     border-radius: 16px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
     .skills-list {
         justify-content: start;
     }
@@ -41,13 +41,16 @@
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
+    .skills-list {
+        justify-content: space-between;
+    }
     .skill-item {
         width: 40%;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 525px) {
     .skill-item {
         width: 100%;
     }
