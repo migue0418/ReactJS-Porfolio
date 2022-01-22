@@ -76,13 +76,19 @@
     display: none !important;
 }
 
-@media screen and (max-width: 950px) {  
+@media screen and (max-width: 1500px) {  
     .navbar-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         height: 80px;
-        padding: 2rem;
+        padding: 2rem 3rem;
+    }  
+}
+
+@media screen and (max-width: 975px) {  
+    .navbar-container {
+        justify-content: space-between;
     }  
 
     .navbar.active {
@@ -161,4 +167,10 @@
         color: #242424;
         transition: 250ms;
     }
+}
+
+@media screen and (max-width: 400px) {  
+    .navbar-container {
+        padding: 2rem 1.5rem;
+    }  
 }

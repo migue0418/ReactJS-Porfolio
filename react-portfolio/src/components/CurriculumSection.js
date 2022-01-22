@@ -4,7 +4,6 @@ import './CurriculumSection.css';
 import ProgressBar from './ProgressBar';
 
 function CurriculumSection() {
-    // Hay que hacer display:none en el logo del navbar cuando el ancho de la página sea más de 1500px
     return (
         <>
             <div className='curriculum-section'>
@@ -16,7 +15,7 @@ function CurriculumSection() {
                         <div className='image-container'>
                             <img className='id-image' src='/images/img-1.jpg' alt='Miguel Angel Benitez Alguacil'/>
                         </div>
-                        <h1 className='h1-name'>Miguel Ángel<br/>Benítez Alguacil</h1>
+                        <h1 className='h1-name'>Miguel Ángel<br className='cv-name'/> Benítez Alguacil</h1>
                     </div>
                     <div className='career-section'>
                         <span>Ingeniero Informático<br/>Desarrollador Front-End</span>
@@ -59,7 +58,7 @@ function CurriculumSection() {
                             </li>
                             <li className='languages-item'>
                                 <strong className='language-name'>Inglés</strong>
-                                <p className='language-level'>Avanzado (B2)</p>
+                                <p className='language-level'>B2 (Cambridge)</p>
                             </li>
                             <li className='languages-item'>
                                 <strong className='language-name'>Francés</strong>

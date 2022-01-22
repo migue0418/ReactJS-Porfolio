@@ -2,6 +2,15 @@
     --cv-gray-text: #D4D4D4;
 }
 
+.cv-nav > .navbar-container {
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+.cv-nav .navbar-logo {
+    display: none;
+}
+
 .curriculum-page {
     background-color: var(--primary-color);
     padding-top: 2rem;
@@ -143,7 +152,7 @@
 .cv-info {
     max-width: 1180px;
     margin-left: 320px;
-    padding-left: 9.25rem;
+    padding-left: 10%;
 }
 
 .cv-info .cv-section-heading {
@@ -202,10 +211,6 @@
     line-height: 1.5rem;
 }
 
-.cv-item p {
-    margin-left: 2.1rem;
-}
-
 .uni-link {
     color: var(--cv-gray-text);
     font-weight: bold;
@@ -221,11 +226,11 @@ li.cv-item:not(:last-child) {
     font-size: 1.125rem;
 }
 
-.aptitudes-section .cv-list {
-    margin-left: 1.5rem;
+.cv-list {
+    margin-left: 2.25rem;
 }
 
-.aptitudes-section .cv-item::before {
+.cv-item::before {
     margin-left: -2.1rem;
 }
 
@@ -233,33 +238,129 @@ li.cv-item:not(:last-child) {
     color: white;
 }
 
-@media only screen and (max-width: 500px) {
-    .curriculum-page {
-        padding-top: 0;
+
+@media only screen and (max-width: 1500px) {
+    .cv-nav > .navbar-container {
+        justify-content: space-between;
+        margin-right: 0;
+        background-color: var(--dark-blue);
+    }
+
+    .cv-nav .navbar-logo {
+        display: block;
+    }
+    .cv-info {
+        margin-left: 0;
     }
 
     .cv-left-bar {
         position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: initial;
         height: initial;
         flex-wrap: wrap;
         padding: 2.5rem 0
     }
+
+    .cv-name-career, .cv-contact-languages {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .career-section {
+        width: 100%;
+    }
+
     .aside-navbar {
         display: none;
+    }
+
+    .curriculum-page {
+        padding-top: 0;
+    }
+
+    .cv-name {
+        display: none;
+    }
+
+    .cv-info .profile-section .cv-section-heading {
+        margin-top: 3.125rem;
+    }
+
+    .h2-cv-info {
+        font-size: 1.25rem;
     }
 
     .image-container {
         margin-top: 0;
     }
 
-    .cv-info {
-        margin-left: 0;
-        padding: 0 2rem;
+    .image-section, .career-section,.contact-section, .languages-section {
+        width: 100%;
+        border: none;
     }
 
-    .cv-info .profile-section .cv-section-heading {
-        margin-top: 3.125rem;
+    .contact-item .contact-item-text, .contact-item .contact-link {
+        font-size: 1.125rem;
+    }
+
+    .languages-item .language-name, .languages-item .language-level {
+        font-size: 1.125rem;
+    }
+
+    .download-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cv-info {
+        padding-left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .h2-cv-info {
+        font-size: 1.25rem;
+    }
+
+    .image-section, .career-section, .download-section {
+        width: 100%;
+    }
+
+    .image-container {
+        margin-top: 0;
+    }
+
+    .career-section {
+        background-color: var(--primary-color);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cv-left-bar {
+        display: block;
+    }
+
+    .contact-section, .languages-section {
+        width: 100%;
+    }
+
+    .contact-item .contact-item-text, .contact-item .contact-link {
+        font-size: 1rem;
+    }
+
+    .languages-item .language-name, .languages-item .language-level {
+        font-size: 1rem;
+    }
+
+    .cv-info {
+        margin-left: 0;
+        padding: 0 3rem;
     }
 
     .cv-title-icon {
@@ -270,8 +371,14 @@ li.cv-item:not(:last-child) {
     .cv-title, .cv-title-icon {
         font-size: 1.75rem;
     }
+}
 
-    .skills-list {
-        grid-template-columns:initial !important;
+@media only screen and (max-width: 500px) {
+    .cv-info {
+        padding: 0 2rem;
+    }
+
+    .cv-name {
+        display: block;
     }
 }
