@@ -9,7 +9,7 @@ function CurriculumSection() {
         <>
             <div className='curriculum-section'>
                 <section className='cv-left-bar'>
-                    <div className='navbar-container'>
+                    <div className='navbar-container aside-navbar'>
                         <Link to="/" className="navbar-logo">Migue Alguacil</Link>
                     </div>
                     <div className='image-section'>

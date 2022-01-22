@@ -232,3 +232,46 @@ li.cv-item:not(:last-child) {
 .uni-link:hover, .contact-link:hover, .download-cv:hover {
     color: white;
 }
+
+@media only screen and (max-width: 500px) {
+    .curriculum-page {
+        padding-top: 0;
+    }
+
+    .cv-left-bar {
+        position: static;
+        width: initial;
+        height: initial;
+        flex-wrap: wrap;
+        padding: 2.5rem 0
+    }
+    .aside-navbar {
+        display: none;
+    }
+
+    .image-container {
+        margin-top: 0;
+    }
+
+    .cv-info {
+        margin-left: 0;
+        padding: 0 2rem;
+    }
+
+    .cv-info .profile-section .cv-section-heading {
+        margin-top: 3.125rem;
+    }
+
+    .cv-title-icon {
+        position: initial;
+        margin-right: 1rem;
+    }
+
+    .cv-title, .cv-title-icon {
+        font-size: 1.75rem;
+    }
+
+    .skills-list {
+        grid-template-columns:initial !important;
+    }
+}
