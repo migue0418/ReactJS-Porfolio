@@ -11,21 +11,21 @@ function PortfolioCards() {
                 <div className='cards--wrapper'>
                     <ul className='cards--items'>
                         <CardItem
-                            src='images/autorecambiosramon-hero.png'
+                            src='miguealguacil/images/autorecambiosramon-hero.png'
                             alt='Portada de la web de Autorecambios Ramón'
                             text='Web de Autorecambios Ramón'
                             label='WordPress'
                             path='/portfolio/autorecambios-ramon'
                         />
                         <CardItem
-                            src='images/img-2.jpg'
+                            src='miguealguacil/images/img-2.jpg'
                             alt='Portada de la web de Migue Alguacil'
                             text='Diseño de Migue Alguacil'
                             label='Adobe XD'
                             path='/portfolio/miguealguacil'
                         />
                         <CardItem
-                            src='images/img-8.jpg'
+                            src='miguealguacil/images/img-8.jpg'
                             alt='Portada del videojuego Subject 14'
                             text='Subject 14'
                             label='Videojuego'
