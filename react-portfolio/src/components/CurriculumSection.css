@@ -255,10 +255,15 @@ li.cv-item:not(:last-child) {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .cv-nav > .navbar-container {
+        margin-right: 0;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .cv-nav > .navbar-container {
         justify-content: space-between;
-        margin-right: 0;
         background-color: var(--dark-blue);
     }
 

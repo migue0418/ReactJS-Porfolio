@@ -2,15 +2,16 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css';
 
-function Navbar(isCV) {
+function Navbar(page) {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const checkCV = page ? 'cv-nav' : '';
 
     return (
         <>
-            <nav className={`${click ? 'navbar active' : 'navbar'} ${isCV ? "cv-nav" : ""}`}>
+            <nav className={`${click ? 'navbar active' : 'navbar'} ${checkCV}`}>
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         Migue Alguacil

@@ -1,0 +1,17 @@
+.contact-form {
+    width: 600px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

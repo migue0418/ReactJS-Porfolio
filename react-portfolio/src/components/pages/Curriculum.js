@@ -7,7 +7,7 @@ export default function Curriculum() {
   return (
     <>
       <header className='header'>
-        <Navbar />
+        <Navbar page='cv-nav'/>
       </header>
       <main role='main' className='curriculum-page'>
         <CurriculumSection />

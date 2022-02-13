@@ -25,11 +25,11 @@ function CurriculumSection() {
                         <ul className='contact-info'>
                             <li className='contact-item'>
                                 <i className='fas fa-phone'/>
-                                <p className='contact-item-text'>(+34) 692448917</p>
+                                <a href="tel:+34692448917" className='contact-link'>(+34) 692448917</a>
                             </li>
                             <li className='contact-item'>
                                 <i className='fas fa-envelope'/>
-                                <p className='contact-item-text'>miguealguacil@gmail.com</p>
+                                <a href="mailto:miguealguacil@gmail.com" className='contact-link'>miguealguacil@gmail.com</a>
                             </li>
                             <li className='contact-item'>
                                 <i className='fas fa-globe'/>
