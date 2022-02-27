@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import Curriculum from './components/pages/Curriculum';
 import Portfolio from './components/pages/Portfolio';
-import Contacto from './components/pages/Contacto';
+import NotFound from './components/pages/NotFound';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route path='/miguealguacil/curriculum' element={<Curriculum/>} />
           <Route path='/portfolio' element={<Portfolio/>} />
           <Route path='/miguealguacil/portfolio' element={<Portfolio/>} />
+          <Route path='*' element={<NotFound/>} />
           {/* <Route path='/contacto' element={<Contacto/>} /> */}
         </Routes>
       </Router>

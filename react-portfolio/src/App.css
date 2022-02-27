@@ -33,6 +33,16 @@ h4 { font-size: 1.625rem; }
     font-size: 3rem;
 }
 
+.not-found {
+    margin: 4rem auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
 /* Fonts 90% */
 @media only screen and (max-width: 1500px) {
     h1 { font-size: 3.15rem; }
