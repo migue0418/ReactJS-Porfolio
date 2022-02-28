@@ -1,0 +1,41 @@
+@media print {
+    .cv-left-bar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 290px;
+        height: 100%;
+        padding-top: 1.75rem;
+    }
+
+    .download-section, header {
+        display: none;
+    }
+
+    .image-section, .h1-name, .career-section, .contact-section, .languages-section {
+        margin-top: 1.25rem;
+    }
+
+    .contact-section {
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+
+    .contact-section, .languages-section {
+        border: none;
+    }
+
+    .contact-item, .languages-item {
+        margin-top: 1rem;
+    }
+
+    .cv-info {
+        margin: 1.5rem;
+        max-width: none;
+    }
+
+    .profile-section, .education-section, .work-experience-section {
+        margin-left: 270px;
+    }
+}

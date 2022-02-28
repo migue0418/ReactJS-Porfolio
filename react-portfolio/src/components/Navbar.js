@@ -7,11 +7,10 @@ function Navbar(page) {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    const checkCV = page ? 'cv-nav' : '';
 
     return (
         <>
-            <nav className={`${click ? 'navbar active' : 'navbar'} ${checkCV}`}>
+            <nav className={`${click ? 'navbar active' : 'navbar'}`}>
                 <div className="navbar-container">
                     <Link to="/miguealguacil" className="navbar-logo" onClick={closeMobileMenu}>
                         Migue Alguacil

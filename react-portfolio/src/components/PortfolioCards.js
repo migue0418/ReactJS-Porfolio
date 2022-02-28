@@ -15,21 +15,21 @@ function PortfolioCards() {
                             alt='Portada de la web de Autorecambios Ramón'
                             text='Web de Autorecambios Ramón'
                             label='WordPress'
-                            path='/portfolio/autorecambios-ramon'
+                            path='#'
                         />
                         <CardItem
                             src='miguealguacil/images/img-2.jpg'
                             alt='Portada de la web de Migue Alguacil'
                             text='Diseño de Migue Alguacil'
                             label='Adobe XD'
-                            path='/portfolio/miguealguacil'
+                            path='#'
                         />
                         <CardItem
                             src='miguealguacil/images/img-8.jpg'
                             alt='Portada del videojuego Subject 14'
                             text='Subject 14'
                             label='Videojuego'
-                            path='/portfolio/subject-14'
+                            path='#'
                         />
                     </ul>
                 </div>

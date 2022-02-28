@@ -6,8 +6,8 @@ import CurriculumSection from '../CurriculumSection';
 export default function Curriculum() {
   return (
     <>
-      <header className='header'>
-        <Navbar page='cv-nav'/>
+      <header className='header cv-nav'>
+        <Navbar />
       </header>
       <main role='main' className='curriculum-page'>
         <CurriculumSection />

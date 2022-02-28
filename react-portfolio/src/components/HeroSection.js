@@ -13,7 +13,7 @@ function HeroSection() {
                     Soy un Ingeniero Informático con interés en el diseño y desarrollo web. 
                     Actualmente estoy haciendo mi Trabajo de Fin de Grado sobre Inteligencia Artificial y Software.
                 </p>
-                <Button buttonStyle='btn--secondary' buttonSize='btn--large' roundedStyle='btn--rounded' url='/curriculum'>Conóceme</Button>
+                <Button buttonStyle='btn--secondary' buttonSize='btn--large' roundedStyle='btn--rounded' url='curriculum'>Conóceme</Button>
             </div>
         </div>
     );

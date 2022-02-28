@@ -2,7 +2,7 @@
     --cv-gray-text: #D4D4D4;
 }
 
-.cv-nav > .navbar-container {
+.cv-nav .navbar-container {
     justify-content: flex-end;
     margin-right: 3rem;
 }
@@ -256,13 +256,13 @@ li.cv-item:not(:last-child) {
 }
 
 @media only screen and (max-width: 1200px) {
-    .cv-nav > .navbar-container {
+    .cv-nav .navbar-container {
         margin-right: 0;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .cv-nav > .navbar-container {
+    .cv-nav .navbar-container {
         justify-content: space-between;
         background-color: var(--dark-blue);
     }

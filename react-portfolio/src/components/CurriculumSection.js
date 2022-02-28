@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import './CurriculumSection.css';
+import './CurriculumPrint.css';
 import ProgressBar from './ProgressBar';
 
 function CurriculumSection() {
@@ -67,7 +68,7 @@ function CurriculumSection() {
                         </ul>
                     </div>
                     <div className='download-section'>
-                        <Link to="/miguealguacil" className="download-cv"><i className='fas fa-cloud-download-alt'/> Descargar Curriculum (PDF)</Link>
+                        <a href="/miguealguacil/files/CV.pdf" className="download-cv" download><i className='fas fa-cloud-download-alt'/> Descargar Curriculum (PDF)</a>
                     </div>
                 </section>
                 <section className='cv-info'>
