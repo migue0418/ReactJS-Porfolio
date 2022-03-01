@@ -1,5 +1,21 @@
 :root {
     --cv-gray-text: #D4D4D4;
+    --gray-text: #656262;
+    --light-blue: #60ceed;
+    --blue: #5d8ab5;
+}
+
+.header.cv-nav {
+    background-color: inherit;
+}
+
+.cv-nav .nav-links {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.cv-nav .nav-links:hover {
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .cv-nav .navbar-container {
@@ -12,7 +28,7 @@
 }
 
 .curriculum-page {
-    background-color: var(--primary-color);
+    background-color: #fff;
     padding-top: 2rem;
     padding-bottom: 5rem;
 }
@@ -175,13 +191,13 @@
 
 
 .cv-title, .cv-title-icon {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 2rem;
 }
 
 .cv-section-content p {
     font-size: 1.125rem;
-    color: var(--cv-gray-text);
+    color: var(--gray-text);
     line-height: 1.5rem;
 }
 
@@ -201,18 +217,18 @@
     -moz-border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     border-radius: 0.5rem;
-    background-color: var(--cv-gray-text);
+    background-color: var(--gray-text);
     margin-right: 1.5rem;
 }
 
 .cv-item {
     font-size: 1.125rem;
-    color: var(--cv-gray-text);
+    color: var(--gray-text);
     line-height: 1.5rem;
 }
 
 .uni-link {
-    color: var(--cv-gray-text);
+    color: var(--gray-text);
     font-weight: bold;
     font-size: 1.125rem;
 }
@@ -222,7 +238,7 @@ li.cv-item:not(:last-child) {
 }
 
 .cv-item strong {
-    color: var(--cv-gray-text);
+    color: var(--gray-text);
     font-size: 1.125rem;
 }
 
@@ -234,8 +250,12 @@ li.cv-item:not(:last-child) {
     margin-left: -2.1rem;
 }
 
-.uni-link:hover, .contact-link:hover, .download-cv:hover {
+.contact-link:hover, .download-cv:hover {
     color: white;
+}
+
+.uni-link:hover {
+    color: var(--primary-color);
 }
 
 @media only screen and (max-width: 1500px) {

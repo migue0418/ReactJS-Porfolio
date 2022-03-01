@@ -18,7 +18,7 @@
 }
 
 .progress-bar-background {
-    background-color: #f1f1f1;
+    background-color: var(--cv-gray-text);
     height: 0.875rem;
     width: 180px;
     border-radius: 16px;

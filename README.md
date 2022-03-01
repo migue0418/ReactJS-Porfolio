@@ -1,2 +1,2 @@
 # ReactJS Porfolio
- Portfolio created using ReactJS
+ Web Portfolio & Curriculum created using ReactJS
