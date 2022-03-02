@@ -12,7 +12,7 @@ function Navbar(page) {
         <>
             <nav className={`${click ? 'navbar active' : 'navbar'}`}>
                 <div className="navbar-container">
-                    <Link to="/miguealguacil" className="navbar-logo" onClick={closeMobileMenu}>
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         Migue Alguacil
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
@@ -20,17 +20,17 @@ function Navbar(page) {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/miguealguacil' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Inicio
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/miguealguacil/curriculum' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/curriculum' className='nav-links' onClick={closeMobileMenu}>
                                 Curriculum
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/miguealguacil/portfolio' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/portfolio' className='nav-links' onClick={closeMobileMenu}>
                                 Portfolio
                             </Link>
                         </li>

@@ -10,11 +10,11 @@ function CurriculumSection() {
             <div className='curriculum-section'>
                 <section className='cv-left-bar'>
                     <div className='navbar-container aside-navbar'>
-                        <Link to="/miguealguacil" className="navbar-logo">Migue Alguacil</Link>
+                        <Link to="/" className="navbar-logo">Migue Alguacil</Link>
                     </div>
                     <div className='image-section'>
                         <div className='image-container'>
-                            <img className='id-image' src='/miguealguacil/images/img-1.jpg' alt='Miguel Angel Benitez Alguacil'/>
+                            <img className='id-image' src='images/img-1.jpg' alt='Miguel Angel Benitez Alguacil'/>
                         </div>
                         <h1 className='h1-name'>Miguel Ángel<br className='cv-name'/> Benítez Alguacil</h1>
                     </div>
@@ -68,7 +68,7 @@ function CurriculumSection() {
                         </ul>
                     </div>
                     <div className='download-section'>
-                        <a href="/miguealguacil/files/CV.pdf" className="download-cv" download><i className='fas fa-cloud-download-alt'/> Descargar Curriculum (PDF)</a>
+                        <a href="/files/CV.pdf" className="download-cv" download><i className='fas fa-cloud-download-alt'/> Descargar Curriculum (PDF)</a>
                     </div>
                 </section>
                 <section className='cv-info'>
